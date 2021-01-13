@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
+plt.style.use('bmh')
+df = pd.read_csv('sales_data.csv')
+
+
+x = df['Country']
+y = df['Profit']
+
+
+Bar chart
+plt.xlabel('Country', fontsize=18)
+plt.ylabel('Profit($)', fontsize=16)
+plt.bar(x, y)
+
+
+
+Line Graph
+plt.xlabel('Country', fontsize=18)
+plt.ylabel('Profit($)', fontsize=16)
+plt.scatter(x, y)
+plt.plot(x, y)
+
+plt.show()
+                
